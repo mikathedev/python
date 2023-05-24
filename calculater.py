@@ -1,7 +1,7 @@
 cal = input("enter the calculation / for divide")
 calarray = [*cal]
 calArray = 0
-calarray.
+calarray idk
 if "x" in cal:
     calarray = "".join(calarray)
     calArray = cal.split("x")
