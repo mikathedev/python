@@ -16,6 +16,7 @@ if (len(sa) / 2).is_integer():
 
 # if is not even
 else:
-    ans = (len(sa) / 2)
+    ans = sa[int((len(sa) / 2)+0.5)]
+    print(sa[int((len(sa) / 2)+0.5)])
 print(sa)
 print(ans)
