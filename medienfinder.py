@@ -1,24 +1,22 @@
-s = input("commas and spaces inbetewn")
-sa = s.split(", ")
-c = 0
-ans = 0
-# convert to string
-while len(sa) > c:
-    sa[c] = int(sa[c])
-    c += 1
-sa.sort()
-print(len(sa) / 2)
-# if is even
-if (len(sa) / 2).is_integer():
-    len2 = (len(sa) / 2)
-    ans = (sa[int(len2 - 0.5)] + sa[int(len2 + 0.5)]) / 2
-    print("no int")
+def medein(i):
 
-# if is not even
-else:
-    x = int(((len(sa) / 2)+0.5)-1)
-    print(x)
+    sa = i.split(", ")
+    c = 0
+    ans = 0
+    # convert to string
+    while len(sa) > c:
+        sa[c] = int(sa[c])
+        c += 1
+    sa.sort()
 
-    ans = sa[x]
+    # if is even
+    if (len(sa) / 2).is_integer():
+        len2 = (len(sa) / 2)
+        ans = (sa[int(len2 - 0.5)] + sa[int(len2 + 0.5)]) / 2
 
-print("the answer is ", ans)
+    # if is not even
+    else:
+        x = int(((len(sa) / 2)+0.5)-1)
+        ans = sa[x]
+
+    return ans
