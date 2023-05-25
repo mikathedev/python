@@ -16,7 +16,9 @@ if (len(sa) / 2).is_integer():
 
 # if is not even
 else:
-    ans = sa[int((len(sa) / 2)+0.5)]
-    print(sa[int((len(sa) / 2)+0.5)])
-print(sa)
-print(ans)
+    x = int(((len(sa) / 2)+0.5)-1)
+    print(x)
+
+    ans = sa[x]
+
+print("the answer is ", ans)
